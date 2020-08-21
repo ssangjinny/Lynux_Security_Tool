@@ -272,7 +272,6 @@ class FilePath(QDialog):
 
     def directory_select(self):
         options = QFileDialog.Options()
-        options |= QFileDialog.ShowDirsOnly
         directory_path = QFileDialog.getExistingDirectory(self, "select Directory")
         return directory_path
 
