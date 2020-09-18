@@ -4,6 +4,8 @@
 
 **반드시 root 권한으로 실행시켜 주세요**
 
+본 프로그램은 우분투 16.04에서 Pyinstaller를 사용하여 만들었습니다. 코드도 올려놓았으니 실행파일에 오류가 있다면 python3으로 실행시켜주시기 바랍니다.
+
 *설치 방법*
 
 1. git clone https://github.com/ssangjinny/project.git 명령어로 다운로드
