@@ -6,7 +6,6 @@ import time
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
-from PyQt5 import sip
 
 app = QApplication(sys.argv)
 
@@ -66,7 +65,7 @@ class windows(QMainWindow):  # 메인 윈도우 클래스
 
     def retranslateUi(self, window):
         _translate = QCoreApplication.translate
-        window.setWindowTitle(_translate("window", "ssssibal"))
+        window.setWindowTitle(_translate("window", "Main"))
 
     def timesleep(self):  # 시간 지연 함수
         loop = QEventLoop()
@@ -230,7 +229,7 @@ class Clamav_modal(QDialog):
         i = 0
         t = time.localtime(time.time())
         st = time.strftime('%m%d%H%M%S', t) + ""
-        string = "./logs/Clamav/Clamav_" + st + ".log"
+        string = "logs/Clamav/Clamav_" + st + ".log"
         pt = self.lineEdit.text()
         self.textBrowser.append("바이러스 검사 중...")
         self.timesleep()
@@ -313,7 +312,7 @@ class Chkrootkit_modal(QDialog):
         self.chkbutton.setDisabled(True)
         t = time.localtime(time.time())
         st = time.strftime('%m%d%H%M%S', t) + ""
-        string = "./logs/Chkrootkit/Chkrootkit_" + st + ".log"
+        string = "logs/Chkrootkit/Chkrootkit_" + st + ".log"
         self.textBrowser.append("루트 킷 검사 중...")
         self.timesleep()
         os.system("sudo /sbin/chkrootkit > " + string)
@@ -656,7 +655,7 @@ class Lynis_modal(QDialog):
         self.Lynisbutton.setDisabled(True)
         t = time.localtime(time.time())
         st = time.strftime('%m%d%H%M%S', t) + ""
-        string = "./logs/Lynis/Lynis_" + st + ".log"
+        string = "logs/Lynis/Lynis_" + st + ".log"
         self.textBrowser.append("검사를 진행 중입니다...")
         self.timesleep()
         os.system("sudo lynis audit system")
