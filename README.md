@@ -6,6 +6,8 @@
 
 본 프로그램은 우분투 16.04에서 Pyinstaller를 사용하여 만들었습니다. 코드도 올려놓았으니 실행파일에 오류가 있다면 python3으로 실행시켜주시기 바랍니다.
 
+![image](https://user-images.githubusercontent.com/69946430/93571460-741fa980-f9cf-11ea-84e2-fef0b7c11229.png)
+
 *설치 방법*
 
 1. git clone https://github.com/ssangjinny/project.git 명령어로 다운로드
