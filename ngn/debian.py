@@ -315,12 +315,13 @@ class Chkrootkit_modal(QDialog):
         string = "logs/Chkrootkit/Chkrootkit_" + st + ".log"
         self.textBrowser.append("루트 킷 검사 중...")
         self.timesleep()
-        os.system("sudo /sbin/chkrootkit > " + string)
+        os.system("sudo chkrootkit > " + string)
         file = open(string, 'r')
         result = file.readlines()
         i = 0
         flag = 0
         while i == len(result):
+            i = i + 1
             if result[i] in "INFECTED":
                 inf = str(result[i])
                 self.textBrowser.append(inf)
