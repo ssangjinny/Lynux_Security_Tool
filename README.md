@@ -10,7 +10,7 @@
 
 *설치 방법*
 
-1. git clone https://github.com/ssangjinny/project.git 명령어로 다운로드
+1. git clone https://github.com/ssangjinny/Lynux_Security_Tool.git 명령어로 다운로드
 
 2. ./install.sh 로 보안 툴 설치
 
